@@ -55,7 +55,7 @@ namespace Aula4.Fiap.Ex3.Models
 
         public override string ToString()
         {
-            return $"Nome: {Nome} \n Duração: {Duracao} \n Mesalidade: {Mensalidade}, {Instituicao}";
+            return $"Nome: {Nome} \nDuração: {Duracao} \nMesalidade: {Mensalidade} \n{Instituicao}";
         }
 
 

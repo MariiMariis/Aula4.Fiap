@@ -39,7 +39,7 @@ namespace Aula4.Fiap.Ex3.Models
 
         public override string ToString()
         {
-            return base.ToString() + $"Projeto: {ProjetoConclusao} \nCarga horária estágio: {CargaHorarioEstagio}";
+            return base.ToString() + $" Projeto: {ProjetoConclusao} \n Carga horária estágio: {CargaHorarioEstagio}";
         }
 
     }
