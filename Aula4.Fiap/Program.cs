@@ -3,15 +3,20 @@ using System;
 
 namespace Aula4.Fiap
 {
-    internal class Program
+    // Crie um serviço para lojas de veículos, que retorne informações sobre
+    // os diversos veículos cadastrados, seus atributos e os retorne no console.
+
+    class Program
     {
         static void Main(string[] args)
         {
             // Instanciando fabricante
+            // Nome da classe + nome do objeto a ser criado = new Nome da classe()
             Fabricante honda = new Fabricante() {Nome = "Honda"};
 
 
             // Instanciando um carro
+            // Nome da classe + nome do objeto a ser criado = new Nome da classe()
             Carro carro = new Carro();
 
             carro.Motor = "2.0 Turbo";
@@ -22,7 +27,7 @@ namespace Aula4.Fiap
             carro.Fabricante = honda;
 
             //Instanciando uma moto
-
+            // Nome da classe + nome do objeto a ser criado = new Nome da classe()
             Moto cg = new Moto()
             {
                 PartidaEletrica = true,
@@ -39,7 +44,7 @@ namespace Aula4.Fiap
             veiculo.Motor = "70HP";
             veiculo.Cor = "Vermelho";
 
-            // Instanciando outro veículo
+            // Instanciando outro veículo à partir do construtor na classe veículo
             Veiculo veiculo2 = new Veiculo("Amarelo", "100c", 2022);
 
             // Carro carro3 = new Carro("Rosa", "1.6", 2000);  <- Construtor não é herdado

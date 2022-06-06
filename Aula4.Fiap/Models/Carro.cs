@@ -4,9 +4,11 @@ using System.Text;
 
 namespace Aula4.Fiap.Models
 {
+    // Carro herda de Veículo. O simbolo ':' indica essa relação (herda de)
     class Carro : Veiculo
     {
 
+        // Propriedades da classe carro
         public bool ArCondicionado { get; set; }
 
         public int QuantidadePortas { get; set; }
@@ -21,9 +23,10 @@ namespace Aula4.Fiap.Models
         }
 
 
-        // Invoca o construtor padrão da classe veículo
+        // Invoca o construtor padrão da classe carro
         public Carro() { }
 
+        // construtor que recebe apenas a propriedade quantidade de portas
         public Carro(int quantidade)
         {
             QuantidadePortas= quantidade;
@@ -31,6 +34,7 @@ namespace Aula4.Fiap.Models
 
 
         // Sobrescrevendo o método Pai, permitindo que o carro pare 80% mais devagar
+        // A palavra override sobrescreve o comportamento do método herdado da classe 'Pai' (Veículo)
         public override void Frear(double velocidadeAtual, bool parado, double velocidadeFrenagem)
         {
             // Adiciona comportamento ao método pai
